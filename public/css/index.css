@@ -1,7 +1,40 @@
-html {
-  max-width: 720px;
+
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
 }
 
-body {
-  background: #fff;
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(100, 50, 150);
+  -webkit-text-stroke: 1px rgb(25, 252, 0);
+
+  direction: rtl;
+}
+
+#test {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+
+  text-align: center;
+}
+
+* {
+  font-family: cursive;
+  font-size: 30px;
+}
+
+.test {
+  display: none;
+}
+
+.block {
+  display: block;
+  background: green;
+  margin: auto;
+
+  width: 250px;
 }

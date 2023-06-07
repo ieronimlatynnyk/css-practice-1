@@ -1,0 +1,130 @@
+html {
+  max-width: 720px;
+}
+
+/* body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: #afafaf;
+}
+
+h1.button {
+  background: red;
+  color: black;
+}
+
+h1,
+h2,
+button.button#button {
+  color: green;
+}
+
+div > p {
+  color: aqua;
+} 
+div {
+  box-shadow: 6px 6px 10px;
+}
+
+.card-dark {
+  background: #f1f1f1;
+}
+
+.item {
+  color: green;
+}
+
+.item:only-child {
+  color: blue;
+}
+
+.input-dark {
+  background: #c8c8c8;
+}
+
+.input-dark[required] {
+  background: #ff0000;
+}
+
+.input-dark[type="number"] {
+  background: #1aff00;
+}
+
+.small-img[class~="small"] {
+  box-shadow: 6px 6px 6px;
+  height: 500px
+}
+
+a[rel~='external'] {
+  color: green
+}
+
+btn[class|="btn"] {
+  background: rgb(192, 191, 191)
+}
+
+a[class*="btn"] {
+  background: rgb(255, 0, 0)
+}
+
+a[class$="big"] {
+  background: rgb(0, 255, 140)
+}
+
+.btn::first-letter {
+  color: red
+}
+
+.big-text::first-line {
+  background: #ff0000;
+} */
+
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: red;
+}
+
+.link:hover {
+  color: green;
+}
+
+.link:active {
+  color: purple;
+}
+
+.card:active {
+  background: purple;
+}
+
+input {
+  background: grey;
+}
+
+input:focus {
+  background: red;
+}
+
+.card:focus-within {
+  background: red;
+}
+
+.card:lang(en) > span::after {
+  content: ' (en)';
+}
+
+button:enabled {
+  background: green;
+}
