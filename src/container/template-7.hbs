@@ -5,13 +5,12 @@
 
   <nav class='header_nav col-9'>
     <div class='header_nav_right'>
-      {{>nav list=header}}
+      {{>nav data=links}}
     </div>
   </nav>
 </header>
 
-<main class="main">
-  <!--  -->
+{{!-- <main class="main">
    
   {{#with info}}
   <div class="info_content">
@@ -82,14 +81,48 @@
     {{/with}}
   </div>
 
-{{!-- <div class="advantages">
+ <div class="advantages">
   {{#each advantages}}
     <div>
       <strong>{{title}}</strong>
       <p>{{text}}</p>
     </div>
   {{/each}}
-</div> --}}
+</div> --}} 
+
+<main class="main">
+  {{#with hero}}
+  <div class="hero">
+    <div class="hero_title">{{title}}</div>
+    <div class="hero_description">{{description}}</div>
+    <btn href="{{button.url}}" class="hero_button">{{button.text}}</btn>
+  </div>
+  {{/with}}
+
+  {{#with about}}
+  <div class="about">
+    <div class="about_heading">{{heading}}</div>
+    <div class="about_info">{{info}}</div>
+  </div>
+  {{/with}}
+
+  <div class="articles_header">
+    <text class="articles_header_title">Our Articles</text>
+    <button href="#" class="articles_header_button">View all</button>
+  </div>
+  <div class="article">
+  {{#each articles}}
+  <div class="articles">
+    <div class="articles_card">
+      <img src="{{photo}}" class="articles_card_photo" alt="articles_card_photo">
+      <div class="articles_name">{{name}}</div>
+      <div class="articles_description">{{description}}</div>
+      <button class="articles_button">Read All</button>
+    </div>
+  </div>
+  {{/each}}
+  </div>
+</main>
 
 <footer class='row footer'>
   <div class='col-3'>
